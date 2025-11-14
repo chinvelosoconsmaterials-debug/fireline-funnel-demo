@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Emergency Help | FireLine Plumbing & Electrical</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header small">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/logo/fireline-logo-horizontal.png" alt="FireLine Plumbing & Electrical" class="logo-img" />
+      </a>
+      <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="section">
+    <div class="container narrow">
+      <h1>Request Emergency Help</h1>
+      <p class="section-sub">
+        Provide details below so the FireLine team can respond immediately. For life-threatening situations, contact local emergency services first.
+      </p>
+
+      <!-- FORM -->
+      <form class="form-card" action="thank-you.html" method="GET">
+        
+        <div class="form-row">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" placeholder="Juan Dela Cruz" required />
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Mobile Number</label>
+          <input id="phone" name="phone" type="tel" placeholder="+63 900 000 0000" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email (optional)</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" />
+        </div>
+
+        <div class="form-row">
+          <label for="service">Emergency Type</label>
+          <select id="service" name="service" required>
+            <option value="">Select an option</option>
+            <option value="Plumbing">Plumbing Emergency</option>
+            <option value="Electrical">Electrical Emergency</option>
+            <option value="Both">Both (Plumbing + Electrical)</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="urgency">Urgency Level</label>
+          <select id="urgency" name="urgency" required>
+            <option value="">Select urgency</option>
+            <option value="Right now">Right now (active leak, sparks, outage)</option>
+            <option value="Today">Today</option>
+            <option value="This week">This week</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="details">Describe the Issue</label>
+          <textarea id="details" name="details" rows="4" placeholder="Example: Leaking pipe under the sink, started 30 minutes ago." required></textarea>
+        </div>
+
+        <div class="form-row">
+          <label>Preferred Contact Method</label>
+          <div class="inline-options">
+            <label><input type="radio" name="contact_method" value="Call" checked /> Call</label>
+            <label><input type="radio" name="contact_method" value="Text" /> Text</label>
+            <label><input type="radio" name="contact_method" value="Email" /> Email</label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary full-width">
+          Submit & Continue
+        </button>
+
+        <p class="form-note">
+          This request will be reviewed immediately by FireLine’s emergency dispatch team.
+        </p>
+
+      </form>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>FireLine Plumbing & Electrical · 24/7 Emergency Service</p>
+    </div>
+  </footer>
+
+</body>
+</html>
